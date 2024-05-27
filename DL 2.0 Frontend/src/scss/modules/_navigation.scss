@@ -1,0 +1,149 @@
+.gf-diamond-filter{
+    background-color: $black;
+    margin: 20px 0;     
+    display: block;
+    @media (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .gf-navigation_filter_left {
+        .n_filter_left{
+                display: block;
+                @media (min-width: 992px) {
+                    display: flex;
+                }
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin: 0px;
+                        &.gf-active{
+                            background-color: $aqua;
+                            a{
+                               
+                                color: $black;
+                            }
+                            span{
+                                i{
+                                    color: $black;
+                                }
+                            }
+                        }
+                        &:hover{
+                            a{
+                                background-color: $aqua;
+                                color: $black;
+                            }
+                            span{
+                                background-color: $aqua;
+                                i{
+                                    color: $black;
+                                }
+                                
+                            }
+                        }
+                        span{
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            padding-right: 15px;
+                            cursor: pointer;
+                            i{
+                                color: $white;   
+                            }
+                        }
+                        a.gf-active{
+                            background-color: $aqua;
+                            color: $black; 
+                        }
+                        a{
+                            color: $white;   
+                            display: block;
+                            padding: 15px 15px 15px 15px;  
+                            margin-right: 0; 
+                            font-family: 'Lato', sans-serif ; 
+                            font-size: 18px;
+                            line-height: normal;  
+                            @media (min-width: 992px) {
+                                margin-right: 0;
+                            }
+                            &:hover{
+                                background-color: $aqua;
+                                color: $black;
+                            }
+                            span{
+                                margin-left: 8px;
+                            }
+                        }
+                    }             
+            }
+        }
+        .gf-save-reset-filter{ 
+            // display: flex;
+            // justify-content: space-between;   
+            border-top: 1px solid #ddd;
+            @media (min-width: 992px) {
+                border-top: none;
+            }
+            .gf-navigation_right{
+               display: flex;
+               justify-content: center;
+               @media (min-width: 992px) {
+                justify-content: flex-end;
+               }
+                li{
+                    position: relative;
+                    margin-bottom: 0;
+                    a{
+                        color: $white;   
+                        display: block;
+                        padding: 15px;  
+                        margin-right: 0; 
+                        font-family: 'Lato', sans-serif ; 
+                        font-size: 18px;
+                        line-height: normal;  
+                        display: flex;
+                         align-items: center;
+                         svg{
+                            margin-right: 5px;
+                         }
+                        &:hover{
+                            color: $aqua;
+                            svg{
+                                color: $aqua;
+                            }
+                        }              
+                    }
+                    .gf-save-icon{
+                    // &::before{
+                    //     position: absolute;
+                    //     left: -7px;
+                    //     top: 19px;
+                    //     height: 20px;
+                    //     width: 20px;
+                    //     font-family: 'luma-icons';
+                    //     content: '\e614';
+                    //     font-size: 16px;
+                    // }
+                }
+                .gf-reset-icon{
+                    // &::before{
+                    //     position: absolute;
+                    //     left: -7px;
+                    //     top: 19px;
+                    //     height: 20px;
+                    //     width: 20px;
+                    //     font-family: 'luma-icons';
+                    //     content: '\e628';
+                    //     font-size: 16px;
+                    // }
+                }
+                }
+            }
+    }
+}
+.gf-save-reset-filter{
+    // justify-content: flex-end;
+    justify-content: space-between;
+}
+

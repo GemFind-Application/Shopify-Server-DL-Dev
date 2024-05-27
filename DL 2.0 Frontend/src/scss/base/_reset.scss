@@ -1,0 +1,900 @@
+#root {
+  margin: 50px 0 0 0;
+}
+
+.gf_dl_tool {
+  margin: 15px 0;
+}
+
+// .content-for-layout #root {
+//     font-size: 160%;
+// }
+
+.gf-tool-container {
+  max-width: 1280px;
+  margin: 20px auto;
+  width: 100%;
+  float: none;
+  font-family: "Lato", sans-serif;
+  // max-width: 1820px;
+
+  @media (min-width: 992px) {
+    width: 95%;
+  }
+  @media (max-width: 991px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 479px) {
+    padding: 0 20px;
+  }
+}
+
+#root div:empty {
+  display: block;
+}
+
+.gf-tool-container h1,
+.gf-tool-container h2,
+.gf-tool-container h3,
+.gf-tool-container h4,
+.gf-tool-container h5,
+.gf-tool-container p {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.modal-open div:empty {
+  display: block !important;
+}
+
+.gf-tool-container p {
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Lato", sans-serif;
+}
+
+.gf-tool-container a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+.gf-tool-container .f_heading {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: #000;
+  margin-bottom: 10px !important;
+  text-align: left;
+  text-transform: uppercase;
+  max-width: 90px;
+  min-width: 90px;
+  letter-spacing: 0;
+  font-family: "Lato", sans-serif !important;
+  .f_popup {
+    i {
+      padding-left: 6px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+.gf-tool-container .gf-product-listing .gf-product-box-action label {
+  letter-spacing: 0;
+}
+.gf-tool-container .gf-product-listing .gf-product-price {
+  letter-spacing: 0;
+}
+
+.diamond_heading {
+  max-width: 136px;
+  min-width: 136px;
+}
+
+.gf-tool-container ul {
+  margin: 0;
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+}
+
+.gf-tool-container input {
+  font-family: "Lato", sans-serif;
+  font-size: inherit !important;
+  margin-bottom: 0;
+  border: none;
+}
+.gf-tool-container .gf-filter-main-div input[type="text"] {
+  min-height: 24px;
+}
+input:active,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus {
+  border: none !important;
+  outline: none;
+}
+
+.gf-tool-container textarea {
+  border: none;
+}
+.gf-diamond-search-details select:active,
+.gf-diamond-search-details select:focus {
+  border: 1px solid #ccc !important;
+}
+.gf-diamond-search-details select {
+  border: 1px solid #ccc !important;
+}
+
+.gf-tool-container textarea,
+.gf-tool-container select {
+  margin-bottom: 0;
+}
+.gf-tool-container input[type="radio" i] {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  top: 0;
+  cursor: pointer;
+}
+
+.gf-tool-container select {
+  box-shadow: none !important;
+}
+
+// modal css
+.react-responsive-modal-root {
+  .react-responsive-modal-container {
+    overflow-y: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // @media (min-width: 576px) {
+    //     overflow-y: hidden;
+    // }
+  }
+  .customOverlay {
+    background: #0000008c;
+  }
+  // .react-responsive-modal-modal {
+  //     box-shadow: none;
+  //     scrollbar-color: #6969dd #e0e0e0;
+  //     scrollbar-width: thin;
+  // }
+  .react-responsive-modal-modal {
+    overflow: hidden;
+  }
+  .Diamond-form form {
+    overflow-y: scroll;
+    height: 545px;
+  }
+  .Diamond-form form::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+  }
+  .Diamond-form form::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  .Diamond-form form::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 107, 107);
+  }
+  .Diamond-form--small form {
+    overflow-y: scroll;
+    height: 462px;
+  }
+  .Diamond-form--small form::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+  }
+  .Diamond-form--small form::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  .Diamond-form--small form::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 107, 107);
+  }
+  .Diamond-form--xx-small form {
+    overflow-y: scroll;
+    height: 473px;
+  }
+  .Diamond-form--xx-small form::-webkit-scrollbar {
+    width: 5px;
+    margin-right: 10px;
+  }
+  .Diamond-form--xx-small form::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  .Diamond-form--xx-small form::-webkit-scrollbar-thumb {
+    background-color: rgb(108, 107, 107);
+  }
+  .popup_product {
+    width: 500px;
+    margin: 1.2rem;
+    display: inline-block;
+    @media (min-width: 768px) {
+      margin: 20px auto;
+      height: auto;
+      width: 600px;
+      display: block;
+    }
+    .popup_pr {
+      margin-bottom: 10px;
+    }
+  }
+  .popup_diamond-product {
+    width: 500px;
+    margin: 1.2rem;
+    display: inline-block;
+    @media (min-width: 768px) {
+      margin: 20px auto;
+      height: 80%;
+      width: 600px;
+      display: block;
+      height: 710px;
+    }
+  }
+  // .popup-form-small {
+  //     max-width: 100%;
+  //     top: 100px;
+  //     margin: 1.2rem;
+  //     display: block;
+  //     @media (min-width: 992px) {
+  //         margin: 20px auto;
+  //         top: 15%;
+  //         display: block;
+  //         max-height: 560px;
+  //         max-width: 600px;
+  //     }
+  // }
+  // .popup-form-extra-small {
+  //     max-width: 100%;
+  //     top: 100px;
+  //     margin: 1.2rem;
+  //     display: block;
+  //     @media (min-width: 992px) {
+  //         margin: 20px auto;
+  //         top: 15%;
+  //         display: block;
+  //         max-height: 528px;
+  //         max-width: 600px;
+  //     }
+  // }
+  .popup-form {
+    margin: 1.2rem;
+    display: block;
+    width: 90%;
+    @media (min-width: 992px) {
+      margin: 20px auto;
+      display: block;
+      width: 600px;
+      max-height: 710px;
+    }
+  }
+  .popup-form-extra-small {
+    margin: 1.2rem;
+    display: block;
+    width: 90%;
+    @media (min-width: 992px) {
+      margin: 20px auto;
+      display: block;
+      max-height: 585px;
+      width: 600px;
+    }
+  }
+  .popup-form-small {
+    margin: 1.2rem;
+    display: block;
+    width: 90%;
+    @media (min-width: 992px) {
+      margin: 20px auto;
+      display: block;
+      width: 600px;
+      max-height: 560px;
+    }
+  }
+  .popup-internal-form {
+    max-width: 400px;
+    top: 0;
+    margin: 1.2rem;
+    display: inline-block;
+    border: 2px solid #000;
+    @media (min-width: 768px) {
+      margin: 20px auto;
+      // top: 40%;
+      display: block;
+    }
+  }
+  .popup_Modal {
+    max-width: 600px;
+    padding: 25px 15px;
+    .popup-image {
+      width: 100%;
+    }
+    .popup_content {
+      border: 1px solid #ddd;
+      padding: 10px;
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+      }
+    }
+  }
+  .react-responsive-modal-closeButton {
+    top: 0px;
+    right: 0;
+    background-color: #000;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .popup-print-info {
+    .gf-requested-form {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+}
+
+.gf-btn {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 0;
+  transition: 0.3s;
+  text-transform: capitalize;
+  min-width: inherit !important;
+  min-height: inherit !important;
+  margin-bottom: 15px;
+  &:hover {
+    background-color: #92cddc;
+    color: #fff;
+    box-shadow: none !important;
+  }
+}
+
+// .show .modal-dialog .modal-body .modal__spinner{
+//    position: relative;
+// }
+.show .modal-dialog .modal-body .modal__spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 35%;
+  background-color: #fff;
+  height: 350px;
+  width: 100%;
+}
+
+.ring-diamond-video video {
+  width: 97%;
+  margin: 0 auto;
+}
+
+.Diamond-form form .gf-form-field .MuiFormControl-root .MuiInput-input,
+.Diamond-form form .gf-form-field .MuiInput-root .MuiInput-input {
+  box-shadow: none !important;
+}
+
+.Diamond-form--small form .gf-form-field .MuiFormControl-root .MuiInput-input,
+.Diamond-form--small form .gf-form-field .MuiInput-root .MuiInput-input {
+  box-shadow: none !important;
+}
+
+.Diamond-form--xx-small
+  form
+  .gf-form-field
+  .MuiFormControl-root
+  .MuiInput-input,
+.Diamond-form--xx-small form .gf-form-field .MuiInput-root .MuiInput-input {
+  box-shadow: none !important;
+}
+
+.react-responsive-modal-root div:empty {
+  display: block !important;
+}
+
+.gf-search-product-listing .gf-product-grid-view li.product-listing.gf-active {
+  border: 2px solid #000;
+  box-shadow: 5px 5px 7px 1px #dcdcdc;
+}
+
+.gf-diamond-product-pagination .pagination .active .page-link {
+  padding: 6px 6px;
+}
+
+.noUi-target {
+  z-index: 1;
+  border: none;
+}
+
+.noUi-base {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.popup__reset {
+  width: 350px;
+  display: block;
+  text-align: left;
+  //vertical-align: middle;
+  margin: 20px auto;
+  top: 0;
+  @media (min-width: 576px) {
+    width: 400px;
+  }
+}
+
+.reset_popup-btn {
+  margin-top: 20px;
+  text-align: center;
+  .gf-btn {
+    padding: 5px 20px;
+  }
+  .btn_left {
+    margin-right: 20px;
+  }
+}
+
+.Diamond-form form .gf-form-field .MuiFormControl-root,
+.Diamond-form form .gf-form-field .MuiInput-root {
+  margin: 15px 0 0;
+  width: 100%;
+}
+
+.Diamond-form--small form .gf-form-field .MuiFormControl-root,
+.Diamond-form--small form .gf-form-field .MuiInput-root {
+  margin: 15px 0 0;
+  width: 100%;
+}
+
+.Diamond-form--xx-small form .gf-form-field .MuiFormControl-root,
+.Diamond-form--xx-small form .gf-form-field .MuiInput-root {
+  margin: 15px 0 0;
+  width: 100%;
+}
+
+.gf-form-field .MuiOutlinedInput-root {
+  width: 96%;
+  margin: 5px 0 10px;
+}
+
+.css-1in441m > span {
+  opacity: 1;
+  font-size: 15px;
+}
+
+// .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+//   width: 100%;
+//   margin: 10px 0 20px;
+// }
+// .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root
+//   legend
+//   > span {
+//   opacity: 1;
+//   font-size: 15px;
+// }
+// .MuiOutlinedInput-notchedOutline legend span{
+//   opacity: 1;
+//   font-size: 15px;
+// }
+.Diamond-form form input,
+.Diamond-form form select,
+.Diamond-form form textarea {
+  font-size: 15px;
+  height: 15px;
+  padding: 20px 15px 10px;
+  font-size: 12px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.Diamond-form form textarea {
+  height: 35px !important;
+  padding: 0;
+}
+
+.Diamond-form--small form input,
+.Diamond-form--small form select,
+.Diamond-form--small form textarea {
+  font-size: 15px;
+  height: 15px;
+  padding: 20px 15px 10px;
+  font-size: 12px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.Diamond-form--small form textarea {
+  height: 35px !important;
+  padding: 0;
+}
+
+.Diamond-form--xx-small form input,
+.Diamond-form--xx-small form select,
+.Diamond-form--xx-small form textarea {
+  font-size: 15px;
+  height: 15px;
+  padding: 20px 15px 10px;
+  font-size: 12px;
+  height: 15px;
+  line-height: 15px;
+}
+
+.Diamond-form--xx-small form textarea {
+  height: 35px !important;
+  padding: 0;
+}
+
+.MuiInputLabel-root.MuiInputLabel-formControl {
+  left: 0;
+  top: 14px;
+  display: none;
+  // background-color: #fff;
+}
+
+.Diamond-form--small
+  form
+  .gf-form-field
+  .MuiFormControl-root
+  .MuiInputLabel-root,
+.Diamond-form--small form .gf-form-field .MuiInput-root .MuiInputLabel-root {
+  font-size: 16px;
+  // background-color: #fff;
+  color: #000;
+}
+
+.Diamond-form--xx-small
+  form
+  .gf-form-field
+  .MuiFormControl-root
+  .MuiInputLabel-root,
+.Diamond-form--xx-small form .gf-form-field .MuiInput-root .MuiInputLabel-root {
+  font-size: 16px;
+  // background-color: #fff;
+  color: #000;
+}
+
+// .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root legend {
+//   height: auto;
+// }
+///.contact-prefrtence {
+//margin-bottom: 20px;
+// margin-top: 20px;
+//}
+.popup__reset p {
+  text-align: center;
+}
+
+.Diamond-form input,
+textarea,
+select {
+  box-shadow: none !important;
+  border: none;
+}
+
+.Diamond-form--small input,
+textarea,
+select {
+  box-shadow: none !important;
+  border: none;
+}
+
+.Diamond-form--xx-small input,
+textarea,
+select {
+  box-shadow: none !important;
+  border: none;
+}
+
+.gf-form-field .MuiOutlinedInput-root fieldset legend {
+  // font-size: 15px;
+  color: #000;
+  height: 12px;
+}
+
+// .gf-form-field  fieldset legend span{
+//   opacity: 1;
+// }
+.MuiSelect-select {
+  font-size: 12px !important;
+  padding: 20px 14px 10px !important;
+  height: 15px !important;
+}
+
+.btn-tryon {
+  margin-left: 15px;
+}
+
+.ringbuilder_tooltip {
+  font-size: 10px !important;
+  padding: 4px 4px !important;
+}
+
+.gf-compareitems {
+  display: none;
+  @media (min-width: 576px) {
+    display: block;
+  }
+  .table {
+    width: 100%;
+  }
+}
+
+.gf-compareitems table,
+td,
+th {
+  border: 1px solid #e8e8e8;
+  background-color: #f7f7f7;
+  padding: 8px !important;
+}
+.gf-product-list-viewdata .table,
+td,
+th {
+  background-color: transparent;
+}
+
+.gf-compareitems .table > :not(:first-child) {
+  border-top-color: #e8e8e8;
+}
+
+.gf-compareitems table tfoot tr td a {
+  padding: 5px 10px;
+  background-color: black;
+
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  color: #fff;
+  margin-right: 15px;
+  @media (max-width: 1200px) {
+   width: 24%;
+  }
+ 
+}
+
+.gf-compareitems table tfoot tr td a:hover {
+  background-color: #92cddc;
+  color: #000;
+}
+
+.gf-compareitems table tfoot tr td:first-child {
+  font-weight: 600;
+}
+
+.gf-compareitems thead tr th {
+  text-align: center;
+}
+
+.popup_product .popup_content {
+  margin-top: 20px;
+}
+.gf-model-header h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+.diamond-information .diamond-spacification-list {
+  overflow-y: scroll;
+  height: 545px;
+  width: 560px;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    width: 490px;
+  }
+  @media (max-width: 479px) {
+    width: 320px;
+  }
+  @media (max-width: 375px) {
+    width: 295px;
+  }
+  @media (max-width: 322px) {
+    width: 241px;
+  }
+}
+
+.diamond-information .diamond-spacification-list::-webkit-scrollbar {
+  width: 5px;
+  margin-right: 10px;
+}
+
+.diamond-information .diamond-spacification-list::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.diamond-information .diamond-spacification-list::-webkit-scrollbar-thumb {
+  background-color: #e8e8e8;
+}
+
+.diamond-information .spacification-info {
+  margin-top: 10px;
+}
+
+.gf-search-product-listing
+  .gf-product-grid-view
+  li.gf-product-listing
+  a.gf-btn {
+  color: #fff !important;
+}
+
+.ellipsis-data .__react_component_tooltip {
+  font-size: 8px !important;
+  padding: 4px;
+  width: 45px !important;
+  text-align: center;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  left: 50%;
+  bottom: 125%;
+  font-size: 12px;
+  padding: 1px 5px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.noUi-horizontal .noUi-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.gf-change-view-result select {
+  width: 75px !important;
+}
+
+@media (max-width: 1100px) {
+  #Depth,
+  #TableMeasure {
+    display: none;
+  }
+  .HiddenCol {
+    display: none;
+  }
+  .Depthcol,
+  .TableMeasurecol {
+    display: none;
+  }
+}
+
+.gf-diamond-back-button {
+  margin: 2px 0;
+  a {
+    font-size: 20px;
+    line-height: normal;
+    color: #000;
+    i {
+      font-size: 16px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.ring-diamond-video iframe {
+  border: 0;
+}
+.pagination li a {
+  border: none;
+}
+button.gf-search-btn.gf-active {
+  border-radius: 0;
+  padding: 0 5px;
+  width: fit-content;
+}
+table.gf-table {
+  background: transparent;
+}
+th.table-selecter label {
+  margin-bottom: 0;
+}
+.gf-table .rc-checkbox-input {
+  margin: 0;
+}
+
+.gf-product-list-viewdata .gf-table tbody tr:hover {
+  color: #fff;
+}
+.gf-product-list-viewdata .gf-table tbody tr:hover td {
+  color: #fff !important;
+}
+.gf-product-list-viewdata .gf-table tbody tr:hover td a {
+  color: #fff;
+}
+
+.gf-diamond-change-view ul li a.listview svg:hover {
+  fill: #fff;
+}
+
+.gf-diamond-change-view ul .list-view.gf-active svg {
+  fill: #fff;
+}
+.gf-diamond-change-view ul li a.gf-grid-view-four svg:hover {
+  fill: #fff;
+}
+
+.gf-diamond-change-view ul li a.gf-grid-view-four svg {
+  fill: #797979;
+}
+
+.gf-diamond-change-view ul .grid-view.gf-active a.gf-grid-view-four svg {
+  fill: #fff;
+}
+.ellipsis-data:hover .icon-hover i:hover {
+  color: #fff;
+}
+.react-responsive-modal-root .react-responsive-modal-closeButton {
+  width: fit-content;
+  height: fit-content;
+}
+.gf-product-info .gf-diamond-tryon .gf-diamond-btn,
+.Diamond-form form .prefrence-action,
+.Diamond-form--small form .prefrence-action {
+  width: fit-content;
+}
+.gf-tool-container .noUi-touch-area {
+  height: 0;
+}
+.gf-tool-container .pagination {
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+.gf-tool-container .gf-powered_by {
+    text-align: center !important;
+}
+.gf-diamond-product-pagination .pagination{
+  text-align: center !important;
+
+}
+}
+
+.__react_component_tooltip::before{
+  width: fit-content !important;
+ 
+}
+
+.gem-video{
+  font-style: normal;
+  &::before {
+    position: absolute;  
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f03d";
+  }
+}
+
+.gf-tool-container .diamond-ui-slider #cerfificate{
+font-family: Lato, sans-serif !important;
+font-size: 12px !important;
+font-weight: 500 !important;
+letter-spacing: 0;
+}
+.gf-product-box-action label{ 
+  display: inline-flex; font-size: 13px;     
+  text-transform: uppercase;
+}
+.gf-product-box-action .rc-checkbox input {     
+  height: 14px;
+  width: 14px;
+}
